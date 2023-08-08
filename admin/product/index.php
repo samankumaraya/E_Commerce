@@ -47,6 +47,46 @@
 </div>
     </div>
  </div>
-   
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+    <table class="table table-hover border my-5">
+    
+    <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Image</th>
+    <th>Category</th>
+    <th>Delete</th>
+    </thead>
+    
+    
+    <tbody>
+        <?php
+         include 'Config.php';
+         $Record = mysqli_query($con, "SELECT * FROM `sproduct`");
+
+            while($row = mysqli_fetch_array($Record))
+
+            echo"
+            
+            <tr>
+            <td>$row[Id]</td>
+            <td>$row[PName]</td>
+            <td>$row[PPrice]</td>
+            <td><img src='$row[PImage] height='90px' width='200px'></td>
+            <td>$row[PCategory]</td>
+            <td></td>
+        </tr>
+
+            ";
+        ?>
+    </tbody>
+</table>
+</div>
+        </div>
+    </div>
 </body>
 </html>

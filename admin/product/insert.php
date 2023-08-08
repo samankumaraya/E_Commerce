@@ -14,6 +14,9 @@ if(isset($_POST['submit'])){
     $product_category = $_POST['Pages'];
     mysqli_query($con," INSERT INTO `sproduct`(`PName`, `PPrice`, `PImage`, `PCategory`) VALUES 
     ('$product_name','$product_price','$img_des','$product_category')");
+
+    header("location:index.php");
 }
 
 ?>
+
