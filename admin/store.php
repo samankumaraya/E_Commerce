@@ -24,7 +24,13 @@
   </div>
 </nav>
 
+  <div>
+    <h2 class="text-center">Dashboard</h2>
+  </div>
 
-
+  <div class=" col-md-6 bg-warning text-center m-auto" >
+    <a href="/index.php" class="text-blue text-decoration-none fs-4 fw-bold px-5">Add Item</a>&nbsp;|
+    <a href="" class="text-blue text-decoration-none fs-4 fw-bold px-5">Users</a>
+  </div>
 </body>
 </html>
