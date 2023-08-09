@@ -13,19 +13,28 @@
 
 
 <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand"><img src="logo.jpeg" class="logo" alt=""></a>
-    </div>
+  <div class="container-fluid font-monospace">
+    <a class="navbar-brand pb-2"><img src="logo.jpeg" class="logo" alt=""></a>
+    
     <div class="d-flex">
     <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-home"></i>Home</a>
     <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i>Cart(0) |</a>
 
     <span  class="text-dark-gray pe-2">
-       <i class="fas fa-user-shield"></i>Hello,
-       <a href="" class="text-secondary text-decoration-none pe-2">Login</a>
-       <a href="" class="text-secondary text-decoration-none pe-2">Admin</a>
+       <i class="fas fa-user-shield"></i>Hello, |
+       <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a>
+       <a href="../admin/store.php" class="text-secondary text-decoration-none pe-2">Admin</a>
     </span>
-    </div>
+    
 </nav>
+</div>
+
+ <div class="bg-warning font-monospace">
+    <ul class="list-unstyled d-flex justify-content-center">
+        <li><a href="" class="text-decoration-none text-dark fw-bold fs-4 px-5">LAPTOP</a></li>
+        <li><a href="" class="text-decoration-none text-dark fw-bold fs-4 px-5">Mobile</a></li>
+        <li><a href="" class="text-decoration-none text-dark fw-bold fs-4 px-5">Bag</a></li>
+    </ul>
+ </div>
 </body>
 </html>
