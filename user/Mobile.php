@@ -17,19 +17,19 @@
 
 
         
-    <h1 class="text-warning font-monospace text-center my-3">Home</h1>
+    <h1 class="text-warning font-monospace text-center my-3">Mobile</h1>
 <br><br>
 <?php
  include 'Config.php';
  $Record = mysqli_query($con, "select * from sproduct");
    while($row=mysqli_fetch_array($Record)){
        $check_page = $row['PCategory'];
-       if($check_page ){
+       if($check_page === 'Mobile'){
 
     echo "
     <div class='col-md-6 col-lg-4 m-auto mb-3'>
        <div class='card m-auto' style='width: 18rem;'>
-    <img src='../admin/product/$row[PImage]' class='card-img-top m-auto' style = 'width : 200px; height:200px'>
+    <img src='../admin/product/$row[PImage]' class='card-img-top m-auto' style = 'width : 170px; height:300px'>
     <div class='card-body text-center'>
       <h5 class='card-title text-danger fs-4 fw-bold'>$row[PName]</h5>
       <p class='card-text text-danger fs-4 fw-bold'>Rs: $row[PPrice]</p>

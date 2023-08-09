@@ -17,7 +17,7 @@
     <a class="navbar-brand pb-2"><img src="logo.jpeg" class="logo" alt=""></a>
     
     <div class="d-flex">
-    <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-home"></i>Home</a>
+    <a href="index.php" class="text-secondary text-decoration-none pe-2"><i class="fas fa-home"></i>Home</a>
     <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i>Cart(0) |</a>
 
     <span  class="text-dark-gray pe-2">
@@ -31,9 +31,9 @@
 
  <div class="bg-warning font-monospace">
     <ul class="list-unstyled d-flex justify-content-center">
-        <li><a href="" class="text-decoration-none text-dark fw-bold fs-4 px-5">LAPTOP</a></li>
-        <li><a href="" class="text-decoration-none text-dark fw-bold fs-4 px-5">Mobile</a></li>
-        <li><a href="" class="text-decoration-none text-dark fw-bold fs-4 px-5">Bag</a></li>
+        <li><a href="Laptop.php" class="text-decoration-none text-dark fw-bold fs-4 px-5">LAPTOP</a></li>
+        <li><a href="Mobile.php" class="text-decoration-none text-dark fw-bold fs-4 px-5">Mobile</a></li>
+        <li><a href="Bag.php" class="text-decoration-none text-dark fw-bold fs-4 px-5">Bag</a></li>
     </ul>
  </div>
 </body>
