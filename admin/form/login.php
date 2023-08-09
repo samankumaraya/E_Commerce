@@ -24,7 +24,7 @@
 
                     <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="text"  name="userpassword" class="form-control"  placeholder="Enter password">
+                    <input type="password"  name="userpassword" class="form-control"  placeholder="Enter password">
                     </div>
                     <button name="submit" class="bg-warning fs-4 fw-bold my-3 form-control">Login</button>
                 </form>

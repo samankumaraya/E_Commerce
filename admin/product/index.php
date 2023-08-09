@@ -51,9 +51,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 m-auto">
-    <table class="table table-hover border my-5">
+    <table class="table table-hover border-warning border my-5">
     
-    <thead>
+    <thead class="bg-dark text-white fs-5 font-monospace text-center">
     <th>Id</th>
     <th>Name</th>
     <th>Price</th>
@@ -63,7 +63,7 @@
     </thead>
     
     
-    <tbody>
+    <tbody class="text-center">
         <?php
          include 'Config.php';
          $Record = mysqli_query($con, "SELECT * FROM `sproduct`");
@@ -78,7 +78,7 @@
             <td>$row[PPrice]</td>
             <td><img src='$row[PImage] height='90px' width='200px'></td>
             <td>$row[PCategory]</td>
-            <td></td>
+            <td><a href='' class = 'btn btn-danger'>Home</a></td>
         </tr>
 
             ";

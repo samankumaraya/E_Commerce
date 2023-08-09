@@ -7,7 +7,11 @@ $user_password= $_POST['userpassword'];
 
 $result = mysqli_query($con, "SELECT * FROM `admin` WHERE username = '$user_name' AND userpassword = '$user_password'");
 
+session_start();
+
 if(mysqli_num_rows($result)){
+
+      $_SESSION['admin'] = $user_name;
    echo"
       <script>
         alert('Login successfully');
