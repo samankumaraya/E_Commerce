@@ -27,7 +27,7 @@
     &nbsp;
     <i class="fa-solid fa-right-from-bracket"></i>
     <a href="form/logout.php" class="text-decoration-none text-white">Logout</a> |&nbsp;
-    <a href="" class="text-decoration-none text-white">UserPage</a> 
+    <a href="./user/header.php" class="text-decoration-none text-white">UserPage</a> 
     </span>
   </div>
 </nav>
