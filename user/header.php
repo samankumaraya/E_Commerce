@@ -12,13 +12,22 @@
 <body>
 
 
+<?php
+session_start();
+$count = 0;
+if(isset($_SESSION['cart'])){
+    $count = count($_SESSION['cart']);
+}
+?>
+
+
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid font-monospace">
     <a class="navbar-brand pb-2"><img src="logo.jpeg" class="logo" alt=""></a>
     
     <div class="d-flex">
     <a href="index.php" class="text-secondary text-decoration-none pe-2"><i class="fas fa-home"></i>Home</a>
-    <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i>Cart(0) |</a>
+    <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-shopping-cart"></i>Cart(<?php echo $count ?>) |</a>
 
     <span  class="text-dark-gray pe-2">
        <i class="fas fa-user-shield"></i>Hello, |
@@ -29,7 +38,7 @@
 </nav>
 </div>
 
- <div class="bg-warning font-monospace">
+ <div class="bg-warning sticky-top font-monospace">
     <ul class="list-unstyled d-flex justify-content-center">
         <li><a href="Laptop.php" class="text-decoration-none text-dark fw-bold fs-4 px-5">LAPTOP</a></li>
         <li><a href="Mobile.php" class="text-decoration-none text-dark fw-bold fs-4 px-5">Mobile</a></li>
