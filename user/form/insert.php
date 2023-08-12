@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
         echo "
         <script>
           alert('Registered success');
-          window.location.href = 'register.php';
+          window.location.href = 'login.php';
         </script>
        ";
      }
