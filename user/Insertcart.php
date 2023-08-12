@@ -4,6 +4,7 @@
 
 session_start();
 //session_destroy();
+if(isset($_SESSION['user'])){
 
     $product_name = $_POST['PName'];
     $product_price =$_POST['PPrice'];
@@ -55,4 +56,8 @@ if(isset($_POST['addCart'])){
          }
         }
      }
+    }
+    else{
+        header("location:form/login.php");
+    }
 ?>

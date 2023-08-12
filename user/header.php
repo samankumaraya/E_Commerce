@@ -31,7 +31,22 @@ if(isset($_SESSION['cart'])){
 
     <span  class="text-dark-gray pe-2">
        <i class="fas fa-user-shield"></i>Hello, |
-       <a href="" class="text-secondary text-decoration-none pe-2"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a>
+
+       <?php
+       if(isset($_SESSION['user'])){
+        echo $_SESSION['user'];
+         echo "
+       | <a href='form/logout.php' class='text-secondary text-decoration-none pe-2'><i class='fas fa-sign-in-alt'></i>&nbsp;Logout</a>
+        ";
+       }
+       else{
+        echo "
+        |  <a href='form/login.php' class='text-secondary text-decoration-none pe-2'><i class='fas fa-sign-in-alt'></i>&nbsp;LogIn</a>
+        ";
+       }
+          
+       ?>
+
        <a href="../admin/store.php" class="text-secondary text-decoration-none pe-2">Admin</a>
     </span>
     
