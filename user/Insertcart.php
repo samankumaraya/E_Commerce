@@ -9,6 +9,8 @@ session_start();
     $product_price =$_POST['PPrice'];
     $product_quantity = $_POST['PQuantity'];
 
+   
+
 if(isset($_POST['addCart'])){
 
       $check_product = array_column($_SESSION['cart'],'productName');
@@ -41,4 +43,16 @@ if(isset($_POST['addCart'])){
         }
        }
     }
+   //update product
+    if(isset($_POST['update'])){
+        foreach($_SESSION['cart'] as $key => $value){
+         if($value['productName'] === $_POST['item']){
+            $_SESSION['cart'][$key] = array('productName' => $product_name, 
+                                            'productPrice'=> $product_price, 
+                                            'productQuantity'=> $product_quantity);
+
+                                             header("location:viewCart.php");
+         }
+        }
+     }
 ?>

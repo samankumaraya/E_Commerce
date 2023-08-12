@@ -37,6 +37,7 @@
 
                 <tbody>
                     <?php
+                    
                         session_start();
                         $total = 0;
                         if(isset($_SESSION['cart'])){
@@ -46,11 +47,11 @@
                                 <form action = 'Insertcart.php' method= 'POST'>
                                 <tr>
                                  <td>$key</td>
-                                 <td>$value[productName]</td>
-                                 <td>$value[productPrice]</td>
-                                 <td>$value[productQuantity]</td>
-                                 <td>$total</td>
-                                 <td><button class= 'btn-warning'>Update</button></td>
+                                 <td><input type = 'text' name=''PName' value='$value[productName]'>$value[productName]</td>
+                                 <td><input type = 'text' name=''PPrice' value='$value[productPrice]'>$value[productPrice]</td>
+                                 <td><input type = 'text' name='PQuantity' value='$value[productQuantity]'>$value[productQuantity]</td>
+                                 <td> $total</td>
+                                 <td><button name='update' class= 'btn-warning'>Update</button></td>
                                  <td><button name= 'remove' class= 'btn-danger'>Delete</button></td>
                                  <td> <input type='text' name='item' value= '$value[productName]'> </td>
                                 </tr>
