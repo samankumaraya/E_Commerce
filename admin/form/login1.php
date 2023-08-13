@@ -3,9 +3,9 @@
 $con = mysqli_connect('localhost','root','','ecommerce');
 
 $user_name = $_POST['username'];
-$user_password= $_POST['userpassword'];
+$user_password= $_POST['Password'];
 
-$result = mysqli_query($con, "SELECT * FROM `admin` WHERE username = '$user_name' AND userpassword = '$user_password'");
+$result = mysqli_query($con, "SELECT * FROM `admin` WHERE username = '$user_name' AND Password = '$user_password'");
 
 session_start();
 

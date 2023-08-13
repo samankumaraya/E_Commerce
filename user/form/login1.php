@@ -6,7 +6,7 @@ $Name = $_POST['name'];
 $Password = $_POST['password'];
 
 $Con = mysqli_connect('localhost','root','','ecommerce');
-$result = mysqli_query($Con,"SELECT * FROM `users` WHERE (username = $Name' OR Email = '$Name') AND Password = '$Password' "); 
+$result = mysqli_query($Con,"SELECT * FROM `users` WHERE username = '$Name' AND Password = '$Password' "); 
 
 session_start();
 if(mysqli_num_rows($result)){
