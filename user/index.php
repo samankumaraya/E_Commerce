@@ -33,7 +33,7 @@
     <img src='../admin/product/$row[PImage]' class='card-img-top m-auto' style = 'width : 200px; height:200px'>
     <div class='card-body text-center'>
       <h5 class='card-title text-danger fs-4 fw-bold'>$row[PName]</h5>
-      <p class='card-text text-danger fs-4 fw-bold'>Rs: $row[PPrice]</p>
+      <p class='card-text text-danger fs-4 fw-bold'>"?>Rs:<?php echo number_format($row['PPrice'],2) ?> <?php echo " </p>
       <input type = 'hidden' name = 'PName' value= '$row[PName]'>
       <input type = 'hidden' name = 'PPrice' value= '$row[PPrice]'>
       <input type='number' name = 'PQuantity' value =' min='1' max= '10'' placeholder = 'Quantity'> <br><br>
@@ -51,6 +51,9 @@
  </div>
 </div>
 
+<?php
+ include 'footer.php';
+?>
 
 </body>
 </html>

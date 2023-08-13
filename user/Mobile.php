@@ -32,7 +32,7 @@
     <img src='../admin/product/$row[PImage]' class='card-img-top m-auto' style = 'width : 170px; height:300px'>
     <div class='card-body text-center'>
       <h5 class='card-title text-danger fs-4 fw-bold'>$row[PName]</h5>
-      <p class='card-text text-danger fs-4 fw-bold'>Rs: $row[PPrice]</p>
+      <p class='card-text text-danger fs-4 fw-bold'>"?>Rs:<?php echo number_format($row['PPrice'],2) ?> <?php echo " </p>
       <input type='number' value = 'min='1' max= '20'' placeholder = 'Quantity'> <br><br>
       <input type='submit' class='btn btn-danger text-white w-100' value = 'Add To Cart'>
     </div>
@@ -47,6 +47,9 @@
  </div>
 </div>
 
+<?php
+ include 'footer.php';
+?>
 
 </body>
 </html>

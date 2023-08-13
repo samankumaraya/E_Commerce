@@ -35,14 +35,15 @@ include 'store.php';
 
         <tbody class="text-center text-danger">
           <?php
+          $i = 0;
            while($row = mysqli_fetch_array($Record))
           echo "
            <tr>
-           <td>$row[Id]</td>
+           <td> <?php echo ++$i; ?></td>
            <td>$row[username]</td>
            <td>$row[Email]</td>
            <td>$row[Number]</td>
-           <td><a href='delete.php' class='btn btn-outline-danger'>Delete</a></td>
+           <td><a href='delete.php? ID=$row[Id]' class='btn btn-outline-danger'>Delete</a></td>
        </tr> 
        "
             
