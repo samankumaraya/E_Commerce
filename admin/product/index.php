@@ -78,7 +78,7 @@
             <td>$row[PPrice]</td>
             <td><img src='$row[PImage] height='90px' width='200px'></td>
             <td>$row[PCategory]</td>
-            <td><a class = 'btn btn-danger'>Delete</a></td>
+            <td><a href='delete.php? ID=$row[Id]' class = 'btn btn-danger'>Delete</a></td>
             <td><a href= 'update.php? ID=$row[Id]' class = 'btn btn-success'>Update</a></td>
 
         </tr>
